@@ -3,7 +3,7 @@
   'use strict';
 
   // Fill these in when the store pages are live; empty means "coming soon".
-  var PLAY_URL = '';
+  var PLAY_URL = '';  // e.g. 'https://play.google.com/store/apps/details?id=studio.difira.sububu'
   var APP_STORE_URL = '';
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -19,9 +19,37 @@
     a.target = '_blank';
     a.rel = 'noopener';
     var small = a.querySelector('small');
-    if (small) small.textContent = a.dataset.store === 'play' ? 'Get it on' : 'Download on the';
-    a.setAttribute('aria-label', a.dataset.store === 'play' ? 'Get it on Google Play' : 'Download on the App Store');
+    var label = a.dataset.live || '';
+    if (small) small.textContent = label;
+    a.setAttribute('aria-label', label + ' ' + (a.dataset.store === 'play' ? 'Google Play' : 'App Store'));
   });
+
+  // ---- language: picker, remembered choice, first-visit suggestion ----
+  var LANGS = ['en', 'fr', 'pt', 'es', 'id', 'ar', 'tr'];
+  function pathFor(lang) { return lang === 'en' ? '/' : '/' + lang + '/'; }
+  function remember(lang) { try { localStorage.setItem('sububu-lang', lang); } catch (e) {} }
+  function remembered() { try { return localStorage.getItem('sububu-lang'); } catch (e) { return null; } }
+  var pageLang = document.documentElement.lang;
+  document.querySelectorAll('.lang__select').forEach(function (sel) {
+    sel.addEventListener('change', function () {
+      var lang = LANGS.filter(function (l) { return pathFor(l) === sel.value; })[0] || 'en';
+      remember(lang);
+      location.href = sel.value + location.hash;
+    });
+  });
+  document.querySelectorAll('[data-lang]').forEach(function (a) {
+    a.addEventListener('click', function () { remember(a.dataset.lang); });
+  });
+  // On the English home page, a first-time visitor whose browser prefers
+  // another supported language is sent to that version once.
+  if (pageLang === 'en' && !remembered()) {
+    var prefs = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < prefs.length; i++) {
+      var code = String(prefs[i]).toLowerCase().split('-')[0];
+      if (code === 'en') break;
+      if (LANGS.indexOf(code) > 0) { remember(code); location.replace(pathFor(code) + location.hash); break; }
+    }
+  }
 
   // ---- nav background on scroll ----
   var nav = document.getElementById('nav');

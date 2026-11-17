@@ -1,17 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Sububu · Know before you're charged</title>
+<title>Sububu · Know before you&#x27;re charged</title>
 <meta name="description" content="Sububu warns you before free trials and subscriptions charge you, shows you how to cancel, and helps you ask for a refund. No account. Your list stays on your phone.">
 <meta name="theme-color" content="#EAF7F0">
-<meta property="og:title" content="Sububu · Know before you're charged">
+<meta property="og:title" content="Sububu · Know before you&#x27;re charged">
 <meta property="og:description" content="A friendly owl on guard duty for your free trials and subscriptions.">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="img/app_icon_512.svg">
-<link rel="preload" href="fonts/InterTight-Variable.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="landing.css">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://sububu.web.id/">
+<link rel="alternate" hreflang="en" href="https://sububu.web.id/">
+<link rel="alternate" hreflang="fr" href="https://sububu.web.id/fr/">
+<link rel="alternate" hreflang="pt" href="https://sububu.web.id/pt/">
+<link rel="alternate" hreflang="es" href="https://sububu.web.id/es/">
+<link rel="alternate" hreflang="id" href="https://sububu.web.id/id/">
+<link rel="alternate" hreflang="ar" href="https://sububu.web.id/ar/">
+<link rel="alternate" hreflang="tr" href="https://sububu.web.id/tr/">
+<link rel="alternate" hreflang="x-default" href="https://sububu.web.id/">
+<link rel="icon" type="image/svg+xml" href="/img/app_icon_512.svg">
+<link rel="preload" href="/fonts/InterTight-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/landing.css">
 </head>
 <body>
 
@@ -21,7 +31,7 @@
 <header class="nav" id="nav">
   <div class="wrap nav__in">
     <a class="brand" href="#top" aria-label="Sububu home">
-      <img src="img/app_icon_512.svg" alt="" width="36" height="36">
+      <img src="/img/app_icon_512.svg" alt="" width="36" height="36">
       <span>sububu</span>
     </a>
     <nav class="nav__links" aria-label="Main">
@@ -31,7 +41,11 @@
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn--ink btn--sm" href="#download">Get the app</a>
+    <label class="lang">
+      <span class="sr">Language</span>
+      <select class="lang__select" aria-label="Language"><option value="/" selected>English</option><option value="/fr/">Français</option><option value="/pt/">Português</option><option value="/es/">Español</option><option value="/id/">Bahasa Indonesia</option><option value="/ar/">العربية</option><option value="/tr/">Türkçe</option></select>
+    </label>
+    <a class="btn btn--ink btn--sm nav__cta" href="#download">Get the app</a>
   </div>
 </header>
 
@@ -47,23 +61,20 @@
     <div class="hero__copy">
       <p class="eyebrow reveal"><span class="dot"></span> Trial &amp; subscription guard</p>
       <h1 class="hero__title reveal" style="--d:.05s">
-        Know before<br>you're <span class="hl">charged<svg viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 18 C 80 4, 200 4, 296 14"/></svg></span>
+        Know before<br>you&#x27;re <span class="hl">charged<svg viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 18 C 80 4, 200 4, 296 14"/></svg></span>
       </h1>
-      <p class="hero__lead reveal" style="--d:.12s">
-        Free trials quietly turn into charges. Sububu is a friendly owl on guard duty: it warns you in time,
-        shows you how to cancel, and helps you ask for a refund when one slips through.
-      </p>
+      <p class="hero__lead reveal" style="--d:.12s">Free trials quietly turn into charges. Sububu is a friendly owl on guard duty: it warns you in time, shows you how to cancel, and helps you ask for a refund when one slips through.</p>
       <div class="badges reveal" style="--d:.2s" id="hero-badges">
-        <a class="store store--play" data-store="play" href="#download" aria-label="Google Play: coming soon">
+        <a class="store store--play" data-store="play" data-live="Get it on" href="#download" aria-label="Google Play: Coming soon to">
           <svg class="store__logo" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M3.6 2.3 13.4 12 3.6 21.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1Z" fill="#00D7FE"/>
             <path d="m16.7 8.7-3.3 3.3-9.8-9.7c.3-.2.8-.2 1.2 0l11.9 6.4Z" fill="#00F076"/>
             <path d="m16.7 15.3-11.9 6.4c-.4.2-.9.2-1.2 0l9.8-9.7 3.3 3.3Z" fill="#FF3A44"/>
             <path d="m20.4 13.3-3.7 2-3.3-3.3 3.3-3.3 3.7 2c.9.5.9 2.1 0 2.6Z" fill="#FFC700"/>
           </svg>
-          <span class="store__txt"><small data-label>Coming soon to</small><b>Google Play</b></span>
+          <span class="store__txt"><small>Coming soon to</small><b>Google Play</b></span>
         </a>
-        <a class="store store--apple" data-store="apple" href="#download" aria-label="App Store: coming later">
+        <a class="store store--apple" data-store="apple" data-live="Download on the" href="#download" aria-label="App Store: Later on the">
           <svg class="store__logo" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
             <path d="M16.4 12.7c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.1-1.2 2.9-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.4-.9-2.4-3.9ZM14 5.6c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4Z"/>
           </svg>
@@ -81,30 +92,30 @@
       <div class="ring ring--1" aria-hidden="true"></div>
       <div class="ring ring--2" aria-hidden="true"></div>
 
-      <div class="phone phone--hero tilt">
+      <div class="phone phone--hero">
         <div class="phone__screen">
-          <img class="shot is-on" src="img/screen_home.webp" alt="Sububu home screen: next charge, trials live and money saved" width="540" height="1169">
-          <img class="shot" src="img/screen_detect.webp" alt="Sububu finds subscriptions on your phone for you to confirm" width="540" height="1169" loading="lazy">
-          <img class="shot" src="img/screen_saved.webp" alt="Savings jar with money saved by cancelling in time" width="540" height="1169" loading="lazy">
-          <img class="shot" src="img/screen_money.webp" alt="Money report with monthly spending" width="540" height="1169" loading="lazy">
+          <img class="shot is-on" src="/img/en/screen_home.webp" alt="Sububu home screen: next charge, trials live and money saved" width="540" height="1169">
+          <img class="shot" src="/img/en/screen_detect.webp" alt="Sububu finds subscriptions on your phone for you to confirm" width="540" height="1169" loading="lazy">
+          <img class="shot" src="/img/en/screen_saved.webp" alt="A trial cancelled in time, added to your savings" width="540" height="1169" loading="lazy">
+          <img class="shot" src="/img/en/screen_money.webp" alt="Money report with this month&#x27;s spending and budget" width="540" height="1169" loading="lazy">
         </div>
         <div class="phone__notch" aria-hidden="true"></div>
       </div>
 
       <div class="toast toast--1" aria-hidden="true">
-        <img src="img/sububu_alert.svg" alt="">
+        <img src="/img/sububu_alert.svg" alt="">
         <div><b>Trial ends tomorrow</b><span>Video Plus · $13.99 on Fri, 9:00</span></div>
       </div>
       <div class="toast toast--2" aria-hidden="true">
         <span class="toast__ico toast__ico--coral">!</span>
-        <div><b>Billing day</b><span>3 h left to cancel Music Pro</span></div>
+        <div><b>Billing day</b><span>3 h left to cancel Music Max</span></div>
       </div>
       <div class="toast toast--3" aria-hidden="true">
         <span class="toast__ico toast__ico--green">✓</span>
-        <div><b>Cancelled in time</b><span>+$9.99 to your savings jar</span></div>
+        <div><b>Cancelled in time</b><span>+$15.99 to your savings jar</span></div>
       </div>
 
-      <img class="hero__owl" src="img/sububu_happy.svg" alt="" aria-hidden="true">
+      <img class="hero__owl" src="/img/sububu_happy.svg" alt="" aria-hidden="true">
     </div>
   </div>
 
@@ -114,12 +125,8 @@
 <!-- ============ MARQUEE ============ -->
 <section class="marquee" aria-label="Kinds of subscriptions Sububu keeps an eye on">
   <div class="marquee__track">
-    <div class="marquee__row">
-      <span>Streaming</span><span>Music</span><span>Cloud storage</span><span>AI assistants</span><span>Fitness</span><span>News</span><span>Games</span><span>Dating</span><span>Learning</span><span>Productivity</span><span>VPN</span><span>Photo &amp; video</span>
-    </div>
-    <div class="marquee__row" aria-hidden="true">
-      <span>Streaming</span><span>Music</span><span>Cloud storage</span><span>AI assistants</span><span>Fitness</span><span>News</span><span>Games</span><span>Dating</span><span>Learning</span><span>Productivity</span><span>VPN</span><span>Photo &amp; video</span>
-    </div>
+    <div class="marquee__row"><span>Streaming</span><span>Music</span><span>Cloud storage</span><span>AI assistants</span><span>Fitness</span><span>News</span><span>Games</span><span>Dating</span><span>Learning</span><span>Productivity</span><span>VPN</span><span>Photo &amp; video</span></div>
+    <div class="marquee__row" aria-hidden="true"><span>Streaming</span><span>Music</span><span>Cloud storage</span><span>AI assistants</span><span>Fitness</span><span>News</span><span>Games</span><span>Dating</span><span>Learning</span><span>Productivity</span><span>VPN</span><span>Photo &amp; video</span></div>
   </div>
 </section>
 
@@ -139,7 +146,7 @@
     <header class="head reveal">
       <p class="eyebrow">Everything in one place</p>
       <h2>Small owl. <span class="grad">Big guard duty.</span></h2>
-      <p>From the moment you start a trial to the day you decide, Sububu keeps watch so you don't have to.</p>
+      <p>From the moment you start a trial to the day you decide, Sububu keeps watch so you don&#x27;t have to.</p>
     </header>
 
     <div class="cards">
@@ -198,7 +205,7 @@
         </ol>
       </div>
       <div class="spot__media reveal" style="--d:.1s">
-        <div class="phone tilt"><div class="phone__screen"><img src="img/screen_detail.webp" alt="Trial detail with countdown and reminders" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
+        <div class="phone tilt"><div class="phone__screen"><img src="/img/en/screen_detail.webp" alt="Trial detail with countdown and reminders" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
         <div class="float-note float-note--tl"><i class="pulse"></i>Reminder set for Fri 9:00</div>
       </div>
     </div>
@@ -219,8 +226,8 @@
         </div>
       </div>
       <div class="spot__media reveal" style="--d:.1s">
-        <div class="phone tilt"><div class="phone__screen"><img src="img/screen_decide.webp" alt="Decide cards: cancel, keep or decide later" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
-        <div class="float-note float-note--br"><img src="img/sububu_celebrate.svg" alt="">Saved $13.99 this month</div>
+        <div class="phone tilt"><div class="phone__screen"><img src="/img/en/screen_decide.webp" alt="Decide cards: cancel, keep or decide later" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
+        <div class="float-note float-note--br"><img src="/img/sububu_celebrate.svg" alt="">Saved $13.99 this month</div>
       </div>
     </div>
 
@@ -234,13 +241,13 @@
           <div class="mail__bar"><i></i><i></i><i></i><span>New message</span></div>
           <div class="mail__body">
             <p><b>Subject:</b> Refund request for an unwanted renewal</p>
-            <p class="type" data-text="Hello, I was charged $13.99 today for a subscription I meant to cancel before the trial ended. I haven't used it since. Could you please refund this charge? Thank you!"></p>
+            <p class="type" data-text="Hello, I was charged $13.99 today for a subscription I meant to cancel before the trial ended. I haven&#x27;t used it since. Could you please refund this charge? Thank you!"></p>
           </div>
         </div>
         <p class="fine">Whether you get a refund is up to the store or the service. Sububu never sends emails for you.</p>
       </div>
       <div class="spot__media reveal" style="--d:.1s">
-        <div class="phone tilt"><div class="phone__screen"><img src="img/screen_refund_email.webp" alt="Refund email draft screen" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
+        <div class="phone tilt"><div class="phone__screen"><img src="/img/en/screen_refund_email.webp" alt="Refund email draft screen" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
       </div>
     </div>
 
@@ -248,8 +255,8 @@
     <div class="spot spot--flip">
       <div class="spot__copy reveal">
         <span class="step">4</span>
-        <h3>Watch the savings grow</h3>
-        <p>See what you pay per month and per year, what's due in the next 30 days, and how much you kept by cancelling on time.</p>
+        <h3>See where your money goes</h3>
+        <p>What you pay per month and per year, what&#x27;s due in the next 30 days, which categories cost the most, and your 6-month trend. Plus how much you kept by cancelling on time.</p>
         <div class="bars" aria-hidden="true">
           <div style="--h:42%"><span>Jun</span></div>
           <div style="--h:58%"><span>Jul</span></div>
@@ -260,7 +267,7 @@
         </div>
       </div>
       <div class="spot__media reveal" style="--d:.1s">
-        <div class="phone tilt"><div class="phone__screen"><img src="img/screen_saved.webp" alt="Savings jar screen" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
+        <div class="phone tilt"><div class="phone__screen"><img src="/img/en/screen_money_charts.webp" alt="Money report: spending by category and the last 6 months" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
         <div class="float-note float-note--tl jar">Savings jar <b data-count="38.97" data-prefix="$" data-decimals="2">$0</b></div>
       </div>
     </div>
@@ -275,7 +282,7 @@
       <div class="vault">
         <div class="vault__ring"></div>
         <div class="vault__ring vault__ring--2"></div>
-        <img src="img/sububu_sleep.svg" alt="">
+        <img src="/img/sububu_sleep.svg" alt="">
         <div class="vault__lock"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
       </div>
     </div>
@@ -283,8 +290,8 @@
       <p class="eyebrow eyebrow--light reveal">Private by design</p>
       <h2 class="reveal" style="--d:.05s">Your list never leaves your phone.</h2>
       <ul class="ticks">
-        <li class="reveal" style="--d:.1s"><b>No account, no server.</b> There's nothing to sign up for and nowhere for your data to leak from.</li>
-        <li class="reveal" style="--d:.15s"><b>Read on your phone, then forgotten.</b> If you turn on detection, notifications are checked on the device. Anything that isn't a receipt is ignored and never saved.</li>
+        <li class="reveal" style="--d:.1s"><b>No account, no server.</b> There&#x27;s nothing to sign up for and nowhere for your data to leak from.</li>
+        <li class="reveal" style="--d:.15s"><b>Read on your phone, then forgotten.</b> If you turn on detection, notifications are checked on the device. Anything that isn&#x27;t a receipt is ignored and never saved.</li>
         <li class="reveal" style="--d:.2s"><b>You stay in control.</b> Sububu never cancels, buys or emails on your behalf. You confirm every step.</li>
         <li class="reveal" style="--d:.25s"><b>Your backup, your file.</b> Export to a file and restore it on a new phone.</li>
       </ul>
@@ -302,9 +309,9 @@
       <p>Daylight, Midnight Guard, Sunset Peach and more. Light or dark, every theme keeps text easy to read.</p>
     </header>
     <div class="fan reveal">
-      <div class="phone phone--sm fan__l"><div class="phone__screen"><img src="img/screen_home_peach.webp" alt="Sunset Peach theme" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
-      <div class="phone phone--sm fan__c"><div class="phone__screen"><img src="img/screen_home.webp" alt="Daylight theme" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
-      <div class="phone phone--sm fan__r"><div class="phone__screen"><img src="img/screen_home_midnight.webp" alt="Midnight Guard theme" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
+      <div class="phone phone--sm fan__l"><div class="phone__screen"><img src="/img/en/screen_home_peach.webp" alt="Sunset Peach" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
+      <div class="phone phone--sm fan__c"><div class="phone__screen"><img src="/img/en/screen_home.webp" alt="Daylight" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
+      <div class="phone phone--sm fan__r"><div class="phone__screen"><img src="/img/en/screen_home_midnight.webp" alt="Midnight Guard" width="540" height="1169" loading="lazy"></div><div class="phone__notch"></div></div>
     </div>
   </div>
 </section>
@@ -354,10 +361,10 @@
       <h2>Good to know</h2>
     </header>
     <div class="faq">
-      <details class="reveal"><summary>Does Sububu cancel subscriptions for me?</summary><p>No. Sububu reminds you in time and shows the exact steps to cancel in the service's own app or website. Only you can cancel, so you stay in control.</p></details>
-      <details class="reveal"><summary>Do I need an account?</summary><p>No. There's no sign-up and no server. Everything you add stays on your phone. You can back it up to a file yourself.</p></details>
-      <details class="reveal"><summary>What does "find them for you" read?</summary><p>It's optional and Android-only. Sububu checks which known subscription apps are installed and looks for payment receipts in your notifications, on your phone only. Anything that isn't a receipt is ignored and never stored. You confirm every item before it's added and can turn it off anytime.</p></details>
-      <details class="reveal"><summary>Will I get my money back?</summary><p>That's up to the store or the service. Sububu helps you ask the right place with a polite, ready-to-send email draft, and reminds you to follow up.</p></details>
+      <details class="reveal"><summary>Does Sububu cancel subscriptions for me?</summary><p>No. Sububu reminds you in time and shows the exact steps to cancel in the service&#x27;s own app or website. Only you can cancel, so you stay in control.</p></details>
+      <details class="reveal"><summary>Do I need an account?</summary><p>No. There&#x27;s no sign-up and no server. Everything you add stays on your phone. You can back it up to a file yourself.</p></details>
+      <details class="reveal"><summary>What does &quot;finds them for you&quot; read?</summary><p>It&#x27;s optional and Android-only. Sububu checks which known subscription apps are installed and looks for payment receipts in your notifications, on your phone only. Anything that isn&#x27;t a receipt is ignored and never stored. You confirm every item before it&#x27;s added and can turn it off anytime.</p></details>
+      <details class="reveal"><summary>Will I get my money back?</summary><p>That&#x27;s up to the store or the service. Sububu helps you ask the right place with a polite, ready-to-send email draft, and reminds you to follow up.</p></details>
       <details class="reveal"><summary>Will reminders still arrive after I restart my phone?</summary><p>Yes. Reminders are rescheduled after a restart, a time-zone change and app updates. On some phones, battery savers can delay notifications; Sububu shows you how to allow them and lets you send a test reminder.</p></details>
       <details class="reveal"><summary>Is there an iPhone version?</summary><p>Android comes first. An iOS version is planned for later.</p></details>
     </div>
@@ -368,7 +375,7 @@
 <section class="cta" id="download">
   <div class="cta__glow" aria-hidden="true"></div>
   <div class="wrap cta__in">
-    <img class="cta__owl" src="img/sububu_celebrate.svg" alt="" aria-hidden="true">
+    <img class="cta__owl" src="/img/sububu_celebrate.svg" alt="" aria-hidden="true">
     <h2 class="reveal">Never pay for a forgotten trial again.</h2>
     <p class="reveal" style="--d:.06s">Sububu is coming to Google Play. iPhone later.</p>
     <div class="badges badges--center reveal" style="--d:.12s" id="cta-badges"></div>
@@ -382,21 +389,21 @@
 <footer class="foot">
   <div class="wrap foot__in">
     <div class="foot__brand">
-      <a class="brand" href="#top"><img src="img/app_icon_512.svg" alt="" width="32" height="32"><span>sububu</span></a>
+      <a class="brand" href="#top"><img src="/img/app_icon_512.svg" alt="" width="32" height="32"><span>sububu</span></a>
       <p>Your subscription guard. Made by Difira Studio, a tiny studio that also forgot to cancel a trial once.</p>
     </div>
     <nav class="foot__cols" aria-label="Footer">
       <div><h4>Product</h4><a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
-      <div><h4>Legal</h4><a href="privacy-policy.html">Privacy policy</a><a href="terms.html">Terms of service</a><a href="legal.html">All languages</a></div>
-      <div><h4>Contact</h4><a href="mailto:support@sububu.web.id">support@sububu.web.id</a></div>
+      <div><h4>Legal</h4><a href="privacy-policy.html">Privacy policy</a><a href="terms.html">Terms of service</a><a href="/legal.html">All languages</a></div>
+      <div><h4>Contact</h4><a href="mailto:support@sububu.web.id">support@sububu.web.id</a><div class="foot__langs"><a href="/" lang="en" data-lang="en">English</a><a href="/fr/" lang="fr" data-lang="fr">Français</a><a href="/pt/" lang="pt" data-lang="pt">Português</a><a href="/es/" lang="es" data-lang="es">Español</a><a href="/id/" lang="id" data-lang="id">Bahasa Indonesia</a><a href="/ar/" lang="ar" data-lang="ar">العربية</a><a href="/tr/" lang="tr" data-lang="tr">Türkçe</a></div></div>
     </nav>
   </div>
   <div class="wrap foot__fine">
-    <p>© <span id="year">2026</span> Difira Studio. Service names belong to their owners; Sububu isn't affiliated with them.</p>
+    <p>© <span id="year">2026</span> Difira Studio. Service names belong to their owners; Sububu isn&#x27;t affiliated with them.</p>
     <p>Google Play is a trademark of Google LLC. App Store is a service mark of Apple Inc.</p>
   </div>
 </footer>
 
-<script src="landing.js" defer></script>
+<script src="/landing.js" defer></script>
 </body>
 </html>
